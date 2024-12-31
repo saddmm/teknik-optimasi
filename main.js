@@ -114,13 +114,13 @@ function submitData() {
     
     try {
         const result = vogelApproximationMethod(costMatrix, supply, demand);
-        // function rupiah(number) {
-        //     return new Intl.NumberFormat("id-ID", {
-        //         style: "currency",
-        //         currency: "IDR"
-        //       }).format(number);
-        // }
-        resultt.innerText = `Total biaya minimum: ${result.totalCost}`
+        function rupiah(number) {
+            return new Intl.NumberFormat("id-ID", {
+                style: "currency",
+                currency: "IDR"
+              }).format(number);
+        }
+        resultt.innerText = `Total biaya minimum: ${rupiah(result.totalCost)}`
         console.log("Allocation Matrix:");
         console.log(result.allocation);
         console.log("Total Minimum Cost:", result.totalCost);
