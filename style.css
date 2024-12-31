@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  .btn-warning {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #eaff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn-warning:hover {
+    background-color: #badb00;
+  }

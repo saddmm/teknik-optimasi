@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Data Tabel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Input Data Tabel</h2>
+  <form id="dataForm">
+    <table>
+      <thead>
+        <tr>
+          <th>Sumber/Tujuan</th>
+          <th>Majenang</th>
+          <th>Banjarsari</th>
+          <th>Pangandaran</th>
+          <th>Supply</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sumber Mainan</td>
+          <td><input type="number" name="sm1" min="0"></td>
+          <td><input type="number" name="sm2" min="0"></td>
+          <td><input type="number" name="sm3" min="0"></td>
+          <td><input type="number" name="sm_supply" min="0"></td>
+        </tr>
+        <tr>
+          <td>Sumber Mainan Putra</td>
+          <td><input type="number" name="smp1" min="0"></td>
+          <td><input type="number" name="smp2" min="0"></td>
+          <td><input type="number" name="smp3" min="0"></td>
+          <td><input type="number" name="smp_supply" min="0"></td>
+        </tr>
+        <tr>
+          <td>Sumber Mainan Toys</td>
+          <td><input type="number" name="smt1" min="0"></td>
+          <td><input type="number" name="smt2" min="0"></td>
+          <td><input type="number" name="smt3" min="0"></td>
+          <td><input type="number" name="smt_supply" min="0"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Demand</th>
+          <td><input type="number" name="demand_sm" min="0"></td>
+          <td><input type="number" name="demand_smp" min="0"></td>
+          <td><input type="number" name="demand_smt" min="0"></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <button type="button" class="btn-submit" onclick="submitData()">Submit</button>
+    <button class="btn-warning" onclick="location.reload()">Reset</button>
+  </form>
+
+  <h2 class="result"></h2>
+
+  <script src="main.js"></script>
+</body>
+</html>
